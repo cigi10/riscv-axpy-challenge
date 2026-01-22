@@ -1,7 +1,8 @@
 /*
-* RISC-V Q15 Fixed-Point AXPY Implementation
-* y[i] = sat_q15(a[i] + (alpha * b[i]) >> 15)
-* Vector-accelerated via GCC auto-vectorization
+Implement the following function in C
+void q15_axpy_rvv(const int16_t *a, const int16_t *b, int16_t *y, int n, int16_t alpha);
+that computes, for all i in [0..n):
+y[i]=sat_q15(a[i]+α⋅b[i])y[i]
 */
 
 #include <stdio.h>
